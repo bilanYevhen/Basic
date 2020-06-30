@@ -1,0 +1,132 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  polygon {
+      stroke: black;
+      fill: none;
+  }
+  
+  svg rect {
+      fill: yellow;
+  }
+  
+  .colour {
+      animation-name: colour;
+      animation-duration: 2s;
+      animation-delay: 4s;
+      animation-fill-mode: both;
+  }
+  
+  svg line {
+      stroke: black;
+      animation-duration: 2s, 2s;
+      animation-delay: 0s, 2s;
+      animation-fill-mode: both;
+      stroke-linecap: round;
+  }
+  
+  .a {
+      animation-name: movea, zooma;
+  }
+  
+  .b {
+      animation-name: moveb, zoomb;
+  }
+  
+  .c {
+      animation-name: movec, zoomc;
+  }
+  
+  .d {
+      animation-name: moved, zoomd;
+  
+  
+  }
+  @keyframes movea {
+      from {
+          transform: translateY(-300px); 
+       }
+      to { 
+          transform: translateY(50px);
+       }
+  }
+  
+  @keyframes moveb {
+      from {
+          transform: translateX(300px); 
+       }
+      to { 
+          transform: translateX(-50px);
+       }
+  }
+  
+  @keyframes movec {
+      from {
+          transform: translateY(300px); 
+       }
+      to { 
+          transform: translateY(-50px);
+       }
+  }
+  
+  @keyframes moved {
+      from {
+          transform: translateX(-300px); 
+       }
+      to { 
+          transform: translateX(50px);
+       }
+  }
+  
+  @keyframes zooma {
+      from {
+          
+       }
+      to { 
+          stroke-width: 30;
+       }
+  }
+  
+  @keyframes zoomb {
+      from {
+          
+       }
+      to { 
+          stroke-width: 30;
+       }
+  }
+  
+  @keyframes zoomc {
+      from {
+          
+       }
+      to { 
+          stroke-width: 30;
+       }
+  }
+  
+  @keyframes zoomd {
+      from {
+          
+       }
+      to { 
+          stroke-width: 30;
+       }
+  }
+  
+  @keyframes colour {
+      from {
+          transform: scale(0.01);
+          transform-origin: 100% 100% 0;
+       }
+      to { 
+          transform-origin: 100% 100% 0;
+          
+       }
+  }

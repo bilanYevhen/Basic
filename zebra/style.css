@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Literata:ital@1&display=swap');
+
+
+h1 {
+	font-family: 'Literata', serif;
+	color: rgb(27, 204, 154);
+}
+
+h2 {
+ 	font-family: 'Fira Code', monospace;
+   	color: rgba(237, 114, 184, 0.54);
+}
+
+ul {
+	font-size: 18px;
+	line-height: 24px;
+	font-family: 'Helvetica', sans-serif;
+}
+
+ol {
+	font-size: 16px;
+	line-height: 22px;
+	font-family: 'Times New Roman', serif;
+}
+
+p {
+	color: #03fc2c
+}

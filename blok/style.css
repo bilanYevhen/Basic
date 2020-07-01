@@ -1,0 +1,115 @@
+html, body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box, .inner-box {
+    width: 100px;
+    height: 100px;
+    animation-fill-mode: both;
+  }
+  
+  .box {
+    animation-name: rotateCW;
+    animation-duration: 3s;
+    animation-delay: 2s;
+  }
+  
+  .inner-box {
+    position: absolute;
+    border: 2px solid;
+    animation-duration: 3s, 3s, 3s;
+    animation-delay: 0s, 0s, 2s;
+  }
+  
+  .red {
+    border-color: red;
+    animation-name: moveTop, moveLeft, rotateCCW;
+  }
+  
+  .green {
+    border-color: green;
+    animation-name: moveTop, moveRight, rotateCCW; 
+  }
+  
+  .yellow {
+    border-color: yellow;
+    animation-name: moveBottom, moveLeft, rotateCCW;
+  }
+  
+  .blue {
+    border-color: blue;
+    animation-name: moveBottom, moveRight, rotateCCW;
+  }
+  
+  @keyframes moveTop {
+    from {
+      margin-top: 0px;
+    }
+    
+    to {
+      margin-top: -100px;
+    }
+  }
+  
+  @keyframes moveLeft {
+    from {
+      margin-left: 0px;
+    }
+    
+    to {
+      margin-left: -100px;
+    }
+  }
+  
+  @keyframes moveRight {
+    from {
+      margin-left: 0px;
+    }
+    
+    to {
+      margin-left: 100px;
+    }
+  }
+  
+  @keyframes moveBottom {
+    from {
+      margin-top: 0px;
+    }
+    
+    to {
+      margin-top: 100px;
+    }
+  }
+  
+  @keyframes rotateCW {
+    from {
+      transform: rotate(0deg);
+    }
+    
+    to {
+      transform: rotate(810deg);
+    }
+  }
+  
+  @keyframes rotateCCW {
+    from {
+      transform: rotate(0deg);
+    }
+    
+    to {
+      transform: rotate(-810deg);
+    }
+  }
+  
+
+
+
+
+
+
+
